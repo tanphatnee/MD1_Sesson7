@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form action="">
+    <label for="first"></label><input type="text" id="first">
+    <label for="second"></label><input type="text" id="second">
+    <br>
+    <br>
+    <button type="button" onclick="addition()">Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="mutiplication()">Mutiplication(x)</button>
+    <button type="button" onclick="divison()">Divison(/)</button>
+</form> 
+<p id="result">Kết quả:</p>
+<script>
+    function addition(){
+        let a= +document.getElementById('first').value
+        let b= +document.getElementById('second').value
+        let cong = a + b
+        document.getElementById('result').innerHTML = 'Kết quả: ' + cong
+    }
+    function subtraction(){
+        let a= +document.getElementById('first').value
+        let b= +document.getElementById('second').value
+        let tru = a - b
+        document.getElementById('result').innerHTML = 'Kết quả: ' + tru
+    }
+    function mutiplication(){
+        let a= +document.getElementById('first').value
+        let b= +document.getElementById('second').value
+        let nhan = a * b
+        document.getElementById('result').innerHTML = 'Kết quả: ' + nhan
+    }
+    function divison(){
+        let a= +document.getElementById('first').value
+        let b= +document.getElementById('second').value
+        let chia = a / b
+        document.getElementById('result').innerHTML = 'Kết quả: ' + chia
+    }
+</script>
+</body>
+</html>
